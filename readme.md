@@ -1,1 +1,1 @@
-# Free WiFi Hotspot project by Congressman Tom Hernandez
+# CDM and URS Free WiFi Hotspot project by Congressman Tom Hernandez
