@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to {{identity}}</title>
+  <title>Tom's Free WiFi</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -25,10 +25,10 @@
     </div>
 
     <!-- Student Login -->
-    <form id="student" class="active" action="$(link-login-only)?trial=yes" method="post">
-      <input type="hidden" name="dst" value="$(link-orig)" />
+    <form id="student" class="active" action="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)" method="post">
+      <input type="hidden" name="dst" value="$(link-orig)" />s
       <input type="hidden" name="popup" value="true" />
-      <input type="submit" value="Connect as Student (Free Access)" />
+      $(if trial == 'yes')<input type="submit" value="Connect as Student (Free Access)" />$(endif)
     </form>
 
     <!-- Instructor Login -->
